@@ -24,4 +24,12 @@ public class QuestionMonitor {
       engine.sendNotification("admin@example.com", "A new question has been posted: " + title);
     }
   }
+
+  public class Main {
+    public static void main(String[] args) {
+      QuestionMonitor monitor = new QuestionMonitor();
+      monitor.start();
+    }
+  }
+  
   
