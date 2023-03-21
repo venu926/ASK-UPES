@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*background image*/
+
+.container{
+   width: 100%;
+   height: 100vh;
+   background-image:linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(https://media.licdn.com/dms/image/C4D03AQGs132EMS_38w/profile-displayphoto-shrink_800_800/0/1645529570419?e=2147483647&v=beta&t=D08MfqlVjNesD3YSHemg0noNY7dp9qKPagXt8saTZOk);
+   background-position: center; 
+   background-size: cover;
+   position: relative;
+}
+
+/* to get the box in centre*/
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+/* Sign up title edit*/
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color:#3c00a0;
+    position: relative;
+}
+
+/*underline under title*/
+
+.form-box h1::after{
+    content: '';
+    width:30px ;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+
+/* css for icons and input boxes*/
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+/* to change the width  of input box */
+
+input{ 
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+
+}
+
+/* to change icon colors and spacing*/
+
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+} 
+
+form p{
+    text-align: left;
+    font-size: 13px;   
+}
+
+form p a{
+   text-decoration: none;
+   color: #3c00a0;
+}
+/*button designing */
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    transition: background 1s;
+
+}
+
+/* space between form and button*/
+
+.input-group{
+    height: 281px;
+}
+
+/* making the other button look diabled when one is used*/
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
